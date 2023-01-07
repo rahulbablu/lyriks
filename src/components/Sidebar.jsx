@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
 import { HiOutlineMenu } from "react-icons/hi";
 import logo from "../assets/logo.png";
@@ -8,7 +8,7 @@ import { links } from "../assets/constants";
 const NavLinks = () => (
   <div className="mt-10">
     {links.map((item) => (
-      <NavLink
+      <Link
         onClick={() => handleClick && handleClick()}
         key={item.name}
         to={item.to}
@@ -16,7 +16,7 @@ const NavLinks = () => (
       >
         <item.icon className="w-6 h-6 mr-2" />
         {item.name}
-      </NavLink>
+      </Link>
     ))}
   </div>
 );
