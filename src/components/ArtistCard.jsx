@@ -8,11 +8,11 @@ const ArtistCard = ({ track }) => {
 
   return (
     <div
-      className="flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer"
+      className="flex flex-col w-[225px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer"
       onClick={() => navigate(`/artists/${track?.artists[0].adamid}`)}
     >
       <img
-        className="w-full h-56 rounded-lg"
+        className="w-full h-50 rounded-lg"
         alt="artist"
         src={track?.images?.background}
       />
